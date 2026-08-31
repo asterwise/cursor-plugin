@@ -1,0 +1,23 @@
+{
+  "name": "asterwise",
+  "displayName": "Asterwise",
+  "version": "1.0.0",
+  "description": "Vedic and Western astrology calculation MCP server: 103 read-only tools for natal and divisional charts, five-level Vimshottari dasha, Ashtakavarga, Shadbala, yogas with BPHS citations, panchanga and muhurta, KP and Lal Kitab, Ashtakoota and Tamil porutham matchmaking with Rajju and Vedha vetoes, Western charts, numerology, and tarot. Swiss Ephemeris precision, OAuth sign-in, free Sandbox tier.",
+  "author": {
+    "name": "Asterwise Labs"
+  },
+  "license": "MIT",
+  "keywords": [
+    "astrology",
+    "vedic-astrology",
+    "jyotish",
+    "mcp",
+    "horoscope",
+    "birth-chart",
+    "panchanga",
+    "numerology",
+    "tarot",
+    "matchmaking"
+  ],
+  "logo": "assets/icon.png"
+}

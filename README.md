@@ -1,34 +1,36 @@
-# Cursor plugin template
+# Asterwise
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Asterwise is an MCP server for structured Vedic and Western astrology calculations. It exposes 103 read-only tools covering natal and divisional charts, five-level Vimshottari dasha, Ashtakavarga, Shadbala, classical yogas, panchanga and muhurta, KP and Lal Kitab, Ashtakoota and Tamil porutham matchmaking (including Rajju and Vedha vetoes), tropical Western charts, numerology, and tarot, powered by Swiss Ephemeris.
 
-Two starter plugins are included:
+## Install
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+### Cursor Marketplace (pending listing)
 
-## Getting started
+Once listed, install **Asterwise** from the Cursor Marketplace. After install, complete OAuth sign-in when prompted so the agent can call tools with your Asterwise account.
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+### Manual fallback
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+Add this MCP server in Cursor (or place the same block in your MCP config):
 
-To add more plugins, see `docs/add-a-plugin.md`.
+```json
+{
+  "mcpServers": {
+    "asterwise": {
+      "url": "https://mcp.asterwise.com/mcp"
+    }
+  }
+}
+```
 
-## Single plugin vs multi-plugin
+Then connect and finish OAuth sign-in in the browser consent flow.
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+## Usage notes
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+- Tools are read-only calculation endpoints (`asterwise:read`).
+- Free Sandbox tier: 500 API calls per month.
+- Product: [https://asterwise.com](https://asterwise.com)
+- Docs: [https://docs.asterwise.com](https://docs.asterwise.com)
 
-## Submission checklist
+## For developers
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+If you are building apps against the same engines outside Cursor, use the Asterwise REST API documented at [https://docs.asterwise.com](https://docs.asterwise.com). This plugin only wires the hosted MCP endpoint into Cursor.
