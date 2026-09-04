@@ -24,6 +24,19 @@ Add this MCP server in Cursor (or place the same block in your MCP config):
 
 Then connect and finish OAuth sign-in in the browser consent flow.
 
+## Try it
+
+Once connected, ask the agent things like:
+
+- "Cast a natal chart for 12 Nov 1985, 06:45, Mumbai, and summarise the Vimshottari dasha running now."
+- "Compare these two birth details with Ashtakoota and tell me if Rajju or Vedha applies."
+- "What is today's panchanga for Delhi, and when is Rahu Kaal?"
+- "Give me a three-card tarot spread on a career question."
+
+## What leaves your machine
+
+Birth details and questions you provide are sent to `mcp.asterwise.com`, which forwards them to `api.asterwise.com` to compute the result. Usage is metered against your Asterwise account. See the [privacy policy](https://asterwise.com/privacy/) and [terms](https://asterwise.com/terms/).
+
 ## Usage notes
 
 - Tools are read-only calculation endpoints (`asterwise:read`).
