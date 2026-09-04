@@ -2,6 +2,8 @@
 
 Asterwise is an MCP server for structured Vedic and Western astrology calculations. It exposes 103 read-only tools covering natal and divisional charts, five-level Vimshottari dasha, Ashtakavarga, Shadbala, classical yogas, panchanga and muhurta, KP and Lal Kitab, Ashtakoota and Tamil porutham matchmaking (including Rajju and Vedha vetoes), tropical Western charts, numerology, and tarot, powered by Swiss Ephemeris.
 
+Watch it work: [46-second demo in Claude Desktop](https://youtu.be/Oe17c6pXl8c). Positions are verified against an independent Swiss Ephemeris run at [asterwise.com/proof](https://asterwise.com/proof/).
+
 ## Install
 
 ### Cursor Marketplace (pending listing)
